@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(52, 32, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;   /* important fix */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;           /* spacing between elements */
+}
+
+button {
+    min-width: 80px;
+    min-height: 80px;
+    color: antiquewhite;
+    background-color: black;
+    font-family: monospace;
+    font-size: 2rem;
+}
+
+button:hover {
+    background-color: rgb(77, 9, 59);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: monospace;
+    font-size: 3rem;
+    color: white;
+}
