@@ -181,5 +181,6 @@ h2{
     width: 8em;
     min-height: 5em;
     margin: 0;
+    gap: 0.5em;
 }
 }
