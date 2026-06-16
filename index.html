@@ -5,30 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic tac toe</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Tic Tac Toe</h1>
-        <table>
-            <tr>
-                <td><button data-row="0" data-col="0"></button></td>
-                <td><button data-row="0" data-col="1"></button></td>
-                <td><button data-row="0" data-col="2"></button></td>
-            </tr>
-            <tr>
-               <td><button data-row="1" data-col="0"></button></td>
-                <td><button data-row="1" data-col="1"></button></td>
-                <td><button data-row="1" data-col="2"></button></td>
-            </tr>
-            <tr>
-                <td><button data-row="2" data-col="0"></button></td>
-                <td><button data-row="2" data-col="1"></button></td>
-                <td><button data-row="2" data-col="2"></button></td>
-            </tr>
-        
-        </table>
-    </div>
+    
+    <div class="vertical ">
+        <div class="turn-board">
+            <h2 class="turn-board-txt"></h2>
+        </div>
+        <div class="container" style="background-color: white;">
+            <div class="vertical score-board" id="turn-board-x">
+             <i class="fa-solid fa-user" style="font-size:25px;color: #4648d4;;"></i>
+                <h2 id="player-x">Player X</h2>
+                <h2 id="score-x">0</h2>
+            </div>
+            <div class="vertical score-board" id="turn-board-o">
+                <i class="fa-regular fa-user" style="font-size: 25px; color: #855300;"></i>
+                <h2 id="player-o">Player O</h2>
+                <h2 id="score-o">0</h2>
+            </div>
 
+        </div>
+        <div class="container">
+            <table>
+                <tr>
+                    <td><button class="game-btns"data-row="0" data-col="0"></button></td>
+                    <td><button class="game-btns"data-row="0" data-col="1"></button></td>
+                    <td><button class="game-btns"data-row="0" data-col="2"></button></td>
+                </tr>
+                <tr>
+                   <td><button  class="game-btns"data-row="1" data-col="0"></button></td>
+                    <td><button class="game-btns" data-row="1" data-col="1"></button></td>
+                    <td><button class="game-btns" data-row="1" data-col="2"></button></td>
+                </tr>
+                <tr>
+                    <td><button class="game-btns"data-row="2" data-col="0"></button></td>
+                    <td><button class="game-btns"data-row="2" data-col="1"></button></td>
+                    <td><button class="game-btns"data-row="2" data-col="2"></button></td>
+                </tr>
+        
+            </table>
+        
+        </div>
+         <button class="reset-btn"onclick="resetgame()">Reset Game</button>
+    </div>
+    
 <script src="practice.js"></script>
 </body>
 </html>
