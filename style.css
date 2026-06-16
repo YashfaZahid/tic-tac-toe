@@ -123,7 +123,7 @@ h1 {
     background-color: rgb(249, 249, 247);
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1024px){
          html,body{
         margin: 0;
         padding: 0;
@@ -145,7 +145,7 @@ h1 {
 }
 }
 @media screen and (max-width: 768px) {
-    html,body{
+    /* html,body{
         margin: 0;
         padding: 0;
         height: 100%;
@@ -153,13 +153,9 @@ h1 {
         overflow-y: hidden;
         overflow-x: hidden;
         align-items: center;
-    }
-    .vertical{
-        width: 100%;
-    }
+    } */
     
     .game-btns{
-    width: 100%;
     min-width: 4rem;
     min-height: 4rem;
     }
@@ -168,13 +164,22 @@ h1 {
     min-height: 3rem;
     
 }
-    .score-board{
-    min-width: 8rem;
+.score-board{
+    display: flex;
+    min-width: 3rem;
     min-height: 2rem;
     background-color: rgb(255, 255, 255);
-    margin: 1rem;
+    /* margin: 1rem; */
     border: solid #e0e0e8 1.5px;
     border-radius: 12px;
     font-family: monospace;
+}
+h2{
+    font-size: 15px;
+}
+.vertical{
+    width: 8em;
+    min-height: 5em;
+    margin: 0;
 }
 }
