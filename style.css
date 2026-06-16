@@ -135,7 +135,7 @@ h1 {
     }
     .game-btns {
     width: min(8vw, 7rem);
-    height: min(8vh, 7rem);
+    height: min(7vw, 7rem);
 
 }
 
@@ -169,8 +169,8 @@ h1 {
     
 }
     .score-board{
-    min-width: 6rem;
-    min-height: 6rem;
+    min-width: 8rem;
+    min-height: 2rem;
     background-color: rgb(255, 255, 255);
     margin: 1rem;
     border: solid #e0e0e8 1.5px;
