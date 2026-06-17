@@ -1,151 +1,172 @@
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: 0;
 }
- html,body{
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        width: 100%;
-        overflow-y: hidden;
-        overflow-x: hidden;
-        align-items: center;
-    }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  align-items: center;
+}
 
 body {
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;       
-    background-color: rgb(240, 238, 238);  
-    padding: 10px;  
-    border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(216, 214, 214);
+  padding: 10px;
+  border-radius: 12px;
 }
-.vertical{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* gap: 1em; */
+.vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 1em; */
 }
 
 .game-btns {
-    min-width: 5rem;
-    min-height: 5rem;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    outline: none;
-    border: none;
-    border-radius: 12px;
-    font-family: monospace;
-    font-size: 2rem;
-    margin: 4px;
+  min-width: 5rem;
+  min-height: 5rem;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  font-family: monospace;
+  font-size: 2rem;
+  margin: 4px;
 }
 
 .game-btns:hover {
-    background-color: rgba(195, 194, 195, 0.53);
-    transition-duration: 0.4s;
-    cursor: pointer;
+  background-color: rgba(195, 194, 195, 0.53);
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
-.reset-btn{
-    min-width: 20rem;
-    min-height: 3rem;
-    background-color: #4648d4;
-    color: white;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-    font-family: monospace;
-    font-size: larger;
-    margin-top: 1rem;
+.reset-btn {
+  min-width: 20rem;
+  min-height: 2.5vw;
+  background-color: #4648d4;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-family: monospace;
+  font-size: larger;
+  margin-top: 1rem;
 }
-.reset-btn:hover{
-    background-color: #34369c;
-    cursor: pointer;
-    transition: 0.5s;
+.reset-btn:hover {
+  background-color: #34369c;
+  cursor: pointer;
+  transition: 0.5s;
 }
 h1 {
-    font-family: monospace;
-    font-size: 3rem;
-    color: rgb(0, 0, 0);
+  font-family: monospace;
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
 }
-.score-board{
-    width: 8rem;
-    height: 8rem;
-    background-color: rgb(255, 255, 255);
-    margin: 1rem;
-    border: solid #e0e0e8 1.5px;
-    border-radius: 12px;
-    font-family: monospace;
+.score-board {
+  width: 8rem;
+  height: 8rem;
+  background-color: rgb(255, 255, 255);
+  margin: 1rem;
+  border: solid #e0e0e8 1.5px;
+  border-radius: 12px;
+  font-family: monospace;
 }
-#turn-board-x{
-    border:solid  #4648d4 1.5px ;
+#turn-board-x {
+  border: solid #4648d4 1.5px;
 }
-#turn-board-o{
-    border:solid  #855300 1.5px ;
+#turn-board-o {
+  border: solid #855300 1.5px;
 }
-#score-x{
-    color: #4648d4;
+#score-x {
+  color: #4648d4;
 }
-#score-o{
-    color: #855300
+#score-o {
+  color: #855300;
 }
-.turn-board{
-    min-width: 150px;
-    min-height: 20px;
-    color: rgb(0, 0, 0);
-    border-radius: 20px;
-    border: solid #e0e0e8 1.5px;
-    outline: none;
-    font-family: monospace;
-    margin-top: 1rem;
-    text-align: center;
-    background-color: rgb(249, 249, 247);
+.turn-board {
+  min-width: 200px;
+  min-height: 25px;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  border: solid #e0e0e8 1.5px;
+  outline: none;
+  font-family: monospace;
+  margin-top: 1rem;
+  text-align: center;
+  background-color: rgb(249, 249, 247);
+}
+.dialog-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
 }
 
-@media screen and (min-width: 1024px){
-         html,body{
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        width: 100%;
-        overflow-y: hidden;
-        overflow-x: hidden;
-        align-items: center;
-    }
-    .game-btns {
+.dialog-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: monospace;
+}
+.player-selection-btn {
+  min-height: 25px;
+  min-width: 70px;
+  outline: solid saddlebrown 1px;
+  border: none;
+  border-radius: 5px;
+}
+#pick-x:hover {
+  background-color: #4648d4;
+  color: white;
+}
+#pick-o:hover {
+  background-color: #855300;
+  color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    align-items: center;
+  }
+  .game-btns {
     width: min(8vw, 7rem);
     height: min(7vw, 7rem);
-
-}
-
-    .score-board{
+  }
+  .score-board {
     min-width: 8rem;
     min-height: 8rem;
-}
+  }
 }
 @media screen and (max-width: 768px) {
-    /* html,body{
+  /* html,body{
         margin: 0;
         padding: 0;
         height: 100%;
@@ -154,17 +175,16 @@ h1 {
         overflow-x: hidden;
         align-items: center;
     } */
-    
-    .game-btns{
+
+  .game-btns {
     min-width: 4rem;
     min-height: 4rem;
-    }
-    .reset-btn{
+  }
+  .reset-btn {
     min-width: 10rem;
     min-height: 3rem;
-    
-}
-.score-board{
+  }
+  .score-board {
     display: flex;
     min-width: 3rem;
     min-height: 2rem;
@@ -173,14 +193,14 @@ h1 {
     border: solid #e0e0e8 1.5px;
     border-radius: 12px;
     font-family: monospace;
-}
-h2{
+  }
+  h2 {
     font-size: 15px;
-}
-.vertical{
+  }
+  .vertical {
     width: 8em;
     min-height: 5em;
     margin: 0;
     gap: 0.5em;
-}
+  }
 }
